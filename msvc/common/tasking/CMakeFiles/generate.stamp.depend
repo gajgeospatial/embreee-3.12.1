@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/embreee-3.12.1/common/cmake/FindTBB.cmake
+C:/Development/op3d_active/embreee-3.12.1/common/cmake/installTBB.cmake
+C:/Development/op3d_active/embreee-3.12.1/common/tasking/CMakeLists.txt

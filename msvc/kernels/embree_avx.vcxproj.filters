@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\geometry\instance_intersector.cpp.avx.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\geometry\curve_intersector_virtual.cpp.avx.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\geometry\curve_intersector_virtual2.cpp.avx.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_intersector1_bvh4.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\geometry\primitive8.cpp.avx.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\scene_user_geometry.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\scene_instance.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\scene_triangle_mesh.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\scene_quad_mesh.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\scene_curves.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\scene_line_segments.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\scene_grid_mesh.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\scene_points.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_collider.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_refit.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_builder.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_builder_hair.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_builder_hair_mb.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_builder_sah.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_builder_sah_spatial.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_builder_sah_mb.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_builder_twolevel.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_builder_subdiv.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_builder_morton.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_rotate.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\builders\primrefgen.cpp.avx.cpp">
+      <Filter>Source Files\builders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_intersector1_bvh8.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_statistics.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\scene_subdiv_mesh.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\geometry\grid_soa.cpp.avx.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\subdiv\subdivpatch1base_eval.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_intersector_hybrid4_bvh4.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_intersector_stream_bvh4.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_intersector_stream_filters.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_intersector_hybrid8_bvh4.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_intersector_hybrid4_bvh8.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_intersector_hybrid8_bvh8.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bvh\bvh_intersector_stream_bvh8.cpp.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\instance_intersector.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual2.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector1_bvh4.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\primitive8.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_user_geometry.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_instance.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_triangle_mesh.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_quad_mesh.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_curves.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_line_segments.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_grid_mesh.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_points.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_collider.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_refit.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_builder.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_builder_hair.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_builder_hair_mb.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_builder_sah.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_builder_sah_spatial.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_builder_sah_mb.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_builder_twolevel.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_builder_subdiv.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_builder_morton.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_rotate.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\6ec35110b0cc29777aa65ade86cce417\primrefgen.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector1_bvh8.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_statistics.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_subdiv_mesh.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\grid_soa.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\63a855110684e705049a2f3d556e9e53\subdivpatch1base_eval.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid4_bvh4.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_bvh4.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_filters.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid8_bvh4.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid4_bvh8.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid8_bvh8.cpp.avx.cpp.rule" />
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_bvh8.cpp.avx.cpp.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A1977AD9-0D3E-3CDB-A636-03DE5117E442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BF7EDE6E-DFB3-3F90-98C5-59331A9B4E87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\builders">
+      <UniqueIdentifier>{4E0135FD-2E6B-3B1D-9D3F-9BF354ACDA21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\geometry">
+      <UniqueIdentifier>{E29D2C6A-DD0E-351E-B843-8C37FBF1ACC7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1030 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{066E19DE-7466-36FD-ADB4-B0488555AD7C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>lights_ispc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lights_ispc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">lights_ispc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">lights_ispc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lights_ispc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">lights_ispc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">lights_ispc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\tutorials\common\glfw\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\light.dev.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\light_ispc.h -MMM .\\light.dev.idep -o .\\light.dev.obj ..\..\..\..\tutorials\common\lights\light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\light_ispc.h -MMM .\\light.dev.idep -o .\\light.dev.obj ..\..\..\..\tutorials\common\lights\light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\light_ispc.h -MMM .\\light.dev.idep -o .\\light.dev.obj ..\..\..\..\tutorials\common\lights\light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\light.dev.obj.rule;..\..\..\..\tutorials\common\lights\light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\light.dev.obj.rule;..\..\..\..\tutorials\common\lights\light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\light.dev.obj.rule;..\..\..\..\tutorials\common\lights\light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\light.dev.obj;.\light.dev_sse2.obj;.\light.dev_sse4.obj;.\light.dev_avx.obj;.\light.dev_avx2.obj;.\light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.\light.dev.obj;.\light.dev_sse2.obj;.\light.dev_sse4.obj;.\light.dev_avx.obj;.\light.dev_avx2.obj;.\light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\light.dev.obj;.\light.dev_sse2.obj;.\light.dev_sse4.obj;.\light.dev_avx.obj;.\light.dev_avx2.obj;.\light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\light_ispc.h -MMM .\\light.dev.idep -o .\\light.dev.obj ..\..\..\..\tutorials\common\lights\light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\light_ispc.h -MMM .\\light.dev.idep -o .\\light.dev.obj ..\..\..\..\tutorials\common\lights\light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\light_ispc.h -MMM .\\light.dev.idep -o .\\light.dev.obj ..\..\..\..\tutorials\common\lights\light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\light.dev.obj.rule;..\..\..\..\tutorials\common\lights\light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\light.dev.obj.rule;..\..\..\..\tutorials\common\lights\light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\light.dev.obj.rule;..\..\..\..\tutorials\common\lights\light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\light.dev.obj;.\light.dev_sse2.obj;.\light.dev_sse4.obj;.\light.dev_avx.obj;.\light.dev_avx2.obj;.\light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.\light.dev.obj;.\light.dev_sse2.obj;.\light.dev_sse4.obj;.\light.dev_avx.obj;.\light.dev_avx2.obj;.\light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\light.dev.obj;.\light.dev_sse2.obj;.\light.dev_sse4.obj;.\light.dev_avx.obj;.\light.dev_avx2.obj;.\light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\light_ispc.h -MMM .\\light.dev.idep -o .\\light.dev.obj ..\..\..\..\tutorials\common\lights\light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\light.dev.obj.rule;..\..\..\..\tutorials\common\lights\light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\light.dev.obj;.\light.dev_sse2.obj;.\light.dev_sse4.obj;.\light.dev_avx.obj;.\light.dev_avx2.obj;.\light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\ambient_light.dev.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//ambient_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//ambient_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//ambient_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\ambient_light_ispc.h -MMM .\\ambient_light.dev.idep -o .\\ambient_light.dev.obj ..\..\..\..\tutorials\common\lights\ambient_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\ambient_light_ispc.h -MMM .\\ambient_light.dev.idep -o .\\ambient_light.dev.obj ..\..\..\..\tutorials\common\lights\ambient_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\ambient_light_ispc.h -MMM .\\ambient_light.dev.idep -o .\\ambient_light.dev.obj ..\..\..\..\tutorials\common\lights\ambient_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\ambient_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\ambient_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\ambient_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\ambient_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\ambient_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\ambient_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\ambient_light.dev.obj;.\ambient_light.dev_sse2.obj;.\ambient_light.dev_sse4.obj;.\ambient_light.dev_avx.obj;.\ambient_light.dev_avx2.obj;.\ambient_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.\ambient_light.dev.obj;.\ambient_light.dev_sse2.obj;.\ambient_light.dev_sse4.obj;.\ambient_light.dev_avx.obj;.\ambient_light.dev_avx2.obj;.\ambient_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\ambient_light.dev.obj;.\ambient_light.dev_sse2.obj;.\ambient_light.dev_sse4.obj;.\ambient_light.dev_avx.obj;.\ambient_light.dev_avx2.obj;.\ambient_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//ambient_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//ambient_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//ambient_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\ambient_light_ispc.h -MMM .\\ambient_light.dev.idep -o .\\ambient_light.dev.obj ..\..\..\..\tutorials\common\lights\ambient_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\ambient_light_ispc.h -MMM .\\ambient_light.dev.idep -o .\\ambient_light.dev.obj ..\..\..\..\tutorials\common\lights\ambient_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\ambient_light_ispc.h -MMM .\\ambient_light.dev.idep -o .\\ambient_light.dev.obj ..\..\..\..\tutorials\common\lights\ambient_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\ambient_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\ambient_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\ambient_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\ambient_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\ambient_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\ambient_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\ambient_light.dev.obj;.\ambient_light.dev_sse2.obj;.\ambient_light.dev_sse4.obj;.\ambient_light.dev_avx.obj;.\ambient_light.dev_avx2.obj;.\ambient_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.\ambient_light.dev.obj;.\ambient_light.dev_sse2.obj;.\ambient_light.dev_sse4.obj;.\ambient_light.dev_avx.obj;.\ambient_light.dev_avx2.obj;.\ambient_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\ambient_light.dev.obj;.\ambient_light.dev_sse2.obj;.\ambient_light.dev_sse4.obj;.\ambient_light.dev_avx.obj;.\ambient_light.dev_avx2.obj;.\ambient_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//ambient_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\ambient_light_ispc.h -MMM .\\ambient_light.dev.idep -o .\\ambient_light.dev.obj ..\..\..\..\tutorials\common\lights\ambient_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\ambient_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\ambient_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\ambient_light.dev.obj;.\ambient_light.dev_sse2.obj;.\ambient_light.dev_sse4.obj;.\ambient_light.dev_avx.obj;.\ambient_light.dev_avx2.obj;.\ambient_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\directional_light.dev.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//directional_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//directional_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//directional_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\directional_light_ispc.h -MMM .\\directional_light.dev.idep -o .\\directional_light.dev.obj ..\..\..\..\tutorials\common\lights\directional_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\directional_light_ispc.h -MMM .\\directional_light.dev.idep -o .\\directional_light.dev.obj ..\..\..\..\tutorials\common\lights\directional_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\directional_light_ispc.h -MMM .\\directional_light.dev.idep -o .\\directional_light.dev.obj ..\..\..\..\tutorials\common\lights\directional_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\directional_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\directional_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\directional_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\directional_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\directional_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\directional_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\directional_light.dev.obj;.\directional_light.dev_sse2.obj;.\directional_light.dev_sse4.obj;.\directional_light.dev_avx.obj;.\directional_light.dev_avx2.obj;.\directional_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.\directional_light.dev.obj;.\directional_light.dev_sse2.obj;.\directional_light.dev_sse4.obj;.\directional_light.dev_avx.obj;.\directional_light.dev_avx2.obj;.\directional_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\directional_light.dev.obj;.\directional_light.dev_sse2.obj;.\directional_light.dev_sse4.obj;.\directional_light.dev_avx.obj;.\directional_light.dev_avx2.obj;.\directional_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//directional_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//directional_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//directional_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\directional_light_ispc.h -MMM .\\directional_light.dev.idep -o .\\directional_light.dev.obj ..\..\..\..\tutorials\common\lights\directional_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\directional_light_ispc.h -MMM .\\directional_light.dev.idep -o .\\directional_light.dev.obj ..\..\..\..\tutorials\common\lights\directional_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\directional_light_ispc.h -MMM .\\directional_light.dev.idep -o .\\directional_light.dev.obj ..\..\..\..\tutorials\common\lights\directional_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\directional_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\directional_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\directional_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\directional_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\directional_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\directional_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\directional_light.dev.obj;.\directional_light.dev_sse2.obj;.\directional_light.dev_sse4.obj;.\directional_light.dev_avx.obj;.\directional_light.dev_avx2.obj;.\directional_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.\directional_light.dev.obj;.\directional_light.dev_sse2.obj;.\directional_light.dev_sse4.obj;.\directional_light.dev_avx.obj;.\directional_light.dev_avx2.obj;.\directional_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\directional_light.dev.obj;.\directional_light.dev_sse2.obj;.\directional_light.dev_sse4.obj;.\directional_light.dev_avx.obj;.\directional_light.dev_avx2.obj;.\directional_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//directional_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\directional_light_ispc.h -MMM .\\directional_light.dev.idep -o .\\directional_light.dev.obj ..\..\..\..\tutorials\common\lights\directional_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\directional_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\directional_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\directional_light.dev.obj;.\directional_light.dev_sse2.obj;.\directional_light.dev_sse4.obj;.\directional_light.dev_avx.obj;.\directional_light.dev_avx2.obj;.\directional_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\point_light.dev.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//point_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//point_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//point_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\point_light_ispc.h -MMM .\\point_light.dev.idep -o .\\point_light.dev.obj ..\..\..\..\tutorials\common\lights\point_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\point_light_ispc.h -MMM .\\point_light.dev.idep -o .\\point_light.dev.obj ..\..\..\..\tutorials\common\lights\point_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\point_light_ispc.h -MMM .\\point_light.dev.idep -o .\\point_light.dev.obj ..\..\..\..\tutorials\common\lights\point_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\point_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\point_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\point_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\point_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\point_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\point_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\point_light.dev.obj;.\point_light.dev_sse2.obj;.\point_light.dev_sse4.obj;.\point_light.dev_avx.obj;.\point_light.dev_avx2.obj;.\point_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.\point_light.dev.obj;.\point_light.dev_sse2.obj;.\point_light.dev_sse4.obj;.\point_light.dev_avx.obj;.\point_light.dev_avx2.obj;.\point_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\point_light.dev.obj;.\point_light.dev_sse2.obj;.\point_light.dev_sse4.obj;.\point_light.dev_avx.obj;.\point_light.dev_avx2.obj;.\point_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//point_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//point_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//point_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\point_light_ispc.h -MMM .\\point_light.dev.idep -o .\\point_light.dev.obj ..\..\..\..\tutorials\common\lights\point_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\point_light_ispc.h -MMM .\\point_light.dev.idep -o .\\point_light.dev.obj ..\..\..\..\tutorials\common\lights\point_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\point_light_ispc.h -MMM .\\point_light.dev.idep -o .\\point_light.dev.obj ..\..\..\..\tutorials\common\lights\point_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\point_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\point_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\point_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\point_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\point_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\point_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\point_light.dev.obj;.\point_light.dev_sse2.obj;.\point_light.dev_sse4.obj;.\point_light.dev_avx.obj;.\point_light.dev_avx2.obj;.\point_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.\point_light.dev.obj;.\point_light.dev_sse2.obj;.\point_light.dev_sse4.obj;.\point_light.dev_avx.obj;.\point_light.dev_avx2.obj;.\point_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\point_light.dev.obj;.\point_light.dev_sse2.obj;.\point_light.dev_sse4.obj;.\point_light.dev_avx.obj;.\point_light.dev_avx2.obj;.\point_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//point_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\point_light_ispc.h -MMM .\\point_light.dev.idep -o .\\point_light.dev.obj ..\..\..\..\tutorials\common\lights\point_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\point_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\point_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\point_light.dev.obj;.\point_light.dev_sse2.obj;.\point_light.dev_sse4.obj;.\point_light.dev_avx.obj;.\point_light.dev_avx2.obj;.\point_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\quad_light.dev.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//quad_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//quad_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//quad_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\quad_light_ispc.h -MMM .\\quad_light.dev.idep -o .\\quad_light.dev.obj ..\..\..\..\tutorials\common\lights\quad_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\quad_light_ispc.h -MMM .\\quad_light.dev.idep -o .\\quad_light.dev.obj ..\..\..\..\tutorials\common\lights\quad_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\quad_light_ispc.h -MMM .\\quad_light.dev.idep -o .\\quad_light.dev.obj ..\..\..\..\tutorials\common\lights\quad_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\quad_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\quad_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\quad_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\quad_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\quad_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\quad_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\quad_light.dev.obj;.\quad_light.dev_sse2.obj;.\quad_light.dev_sse4.obj;.\quad_light.dev_avx.obj;.\quad_light.dev_avx2.obj;.\quad_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.\quad_light.dev.obj;.\quad_light.dev_sse2.obj;.\quad_light.dev_sse4.obj;.\quad_light.dev_avx.obj;.\quad_light.dev_avx2.obj;.\quad_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\quad_light.dev.obj;.\quad_light.dev_sse2.obj;.\quad_light.dev_sse4.obj;.\quad_light.dev_avx.obj;.\quad_light.dev_avx2.obj;.\quad_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//quad_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//quad_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//quad_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\quad_light_ispc.h -MMM .\\quad_light.dev.idep -o .\\quad_light.dev.obj ..\..\..\..\tutorials\common\lights\quad_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\quad_light_ispc.h -MMM .\\quad_light.dev.idep -o .\\quad_light.dev.obj ..\..\..\..\tutorials\common\lights\quad_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\quad_light_ispc.h -MMM .\\quad_light.dev.idep -o .\\quad_light.dev.obj ..\..\..\..\tutorials\common\lights\quad_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\quad_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\quad_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\quad_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\quad_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\quad_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\quad_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\quad_light.dev.obj;.\quad_light.dev_sse2.obj;.\quad_light.dev_sse4.obj;.\quad_light.dev_avx.obj;.\quad_light.dev_avx2.obj;.\quad_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.\quad_light.dev.obj;.\quad_light.dev_sse2.obj;.\quad_light.dev_sse4.obj;.\quad_light.dev_avx.obj;.\quad_light.dev_avx2.obj;.\quad_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\quad_light.dev.obj;.\quad_light.dev_sse2.obj;.\quad_light.dev_sse4.obj;.\quad_light.dev_avx.obj;.\quad_light.dev_avx2.obj;.\quad_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//quad_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\quad_light_ispc.h -MMM .\\quad_light.dev.idep -o .\\quad_light.dev.obj ..\..\..\..\tutorials\common\lights\quad_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\quad_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\quad_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\quad_light.dev.obj;.\quad_light.dev_sse2.obj;.\quad_light.dev_sse4.obj;.\quad_light.dev_avx.obj;.\quad_light.dev_avx2.obj;.\quad_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\spot_light.dev.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//spot_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//spot_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//spot_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\spot_light_ispc.h -MMM .\\spot_light.dev.idep -o .\\spot_light.dev.obj ..\..\..\..\tutorials\common\lights\spot_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\spot_light_ispc.h -MMM .\\spot_light.dev.idep -o .\\spot_light.dev.obj ..\..\..\..\tutorials\common\lights\spot_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\spot_light_ispc.h -MMM .\\spot_light.dev.idep -o .\\spot_light.dev.obj ..\..\..\..\tutorials\common\lights\spot_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\spot_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\spot_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\spot_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\spot_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\spot_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\spot_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\spot_light.dev.obj;.\spot_light.dev_sse2.obj;.\spot_light.dev_sse4.obj;.\spot_light.dev_avx.obj;.\spot_light.dev_avx2.obj;.\spot_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.\spot_light.dev.obj;.\spot_light.dev_sse2.obj;.\spot_light.dev_sse4.obj;.\spot_light.dev_avx.obj;.\spot_light.dev_avx2.obj;.\spot_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\spot_light.dev.obj;.\spot_light.dev_sse2.obj;.\spot_light.dev_sse4.obj;.\spot_light.dev_avx.obj;.\spot_light.dev_avx2.obj;.\spot_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//spot_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//spot_light.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//spot_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\spot_light_ispc.h -MMM .\\spot_light.dev.idep -o .\\spot_light.dev.obj ..\..\..\..\tutorials\common\lights\spot_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\spot_light_ispc.h -MMM .\\spot_light.dev.idep -o .\\spot_light.dev.obj ..\..\..\..\tutorials\common\lights\spot_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\spot_light_ispc.h -MMM .\\spot_light.dev.idep -o .\\spot_light.dev.obj ..\..\..\..\tutorials\common\lights\spot_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\spot_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\spot_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\spot_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\spot_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\spot_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\spot_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\spot_light.dev.obj;.\spot_light.dev_sse2.obj;.\spot_light.dev_sse4.obj;.\spot_light.dev_avx.obj;.\spot_light.dev_avx2.obj;.\spot_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.\spot_light.dev.obj;.\spot_light.dev_sse2.obj;.\spot_light.dev_sse4.obj;.\spot_light.dev_avx.obj;.\spot_light.dev_avx2.obj;.\spot_light_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\spot_light.dev.obj;.\spot_light.dev_sse2.obj;.\spot_light.dev_sse4.obj;.\spot_light.dev_avx.obj;.\spot_light.dev_avx2.obj;.\spot_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/common/lights//spot_light.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\..\tutorials\common\lights -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\spot_light_ispc.h -MMM .\\spot_light.dev.idep -o .\\spot_light.dev.obj ..\..\..\..\tutorials\common\lights\spot_light.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\..\CMakeFiles\10e2e245b0e380e174ecb3e5c8b11cc4\spot_light.dev.obj.rule;..\..\..\..\tutorials\common\lights\spot_light.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\spot_light.dev.obj;.\spot_light.dev_sse2.obj;.\spot_light.dev_sse4.obj;.\spot_light.dev_avx.obj;.\spot_light.dev_avx2.obj;.\spot_light_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include=".\light.dev.obj" />
+    <Object Include=".\light.dev_sse2.obj" />
+    <Object Include=".\light.dev_sse4.obj" />
+    <Object Include=".\light.dev_avx.obj" />
+    <Object Include=".\light.dev_avx2.obj" />
+    <Object Include=".\ambient_light.dev.obj" />
+    <Object Include=".\ambient_light.dev_sse2.obj" />
+    <Object Include=".\ambient_light.dev_sse4.obj" />
+    <Object Include=".\ambient_light.dev_avx.obj" />
+    <Object Include=".\ambient_light.dev_avx2.obj" />
+    <Object Include=".\directional_light.dev.obj" />
+    <Object Include=".\directional_light.dev_sse2.obj" />
+    <Object Include=".\directional_light.dev_sse4.obj" />
+    <Object Include=".\directional_light.dev_avx.obj" />
+    <Object Include=".\directional_light.dev_avx2.obj" />
+    <Object Include=".\point_light.dev.obj" />
+    <Object Include=".\point_light.dev_sse2.obj" />
+    <Object Include=".\point_light.dev_sse4.obj" />
+    <Object Include=".\point_light.dev_avx.obj" />
+    <Object Include=".\point_light.dev_avx2.obj" />
+    <Object Include=".\quad_light.dev.obj" />
+    <Object Include=".\quad_light.dev_sse2.obj" />
+    <Object Include=".\quad_light.dev_sse4.obj" />
+    <Object Include=".\quad_light.dev_avx.obj" />
+    <Object Include=".\quad_light.dev_avx2.obj" />
+    <Object Include=".\spot_light.dev.obj" />
+    <Object Include=".\spot_light.dev_sse2.obj" />
+    <Object Include=".\spot_light.dev_sse4.obj" />
+    <Object Include=".\spot_light.dev_avx.obj" />
+    <Object Include=".\spot_light.dev_avx2.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\common\math\math.vcxproj">
+      <Project>{C09592A3-9689-3A42-A84E-162CC2E8507B}</Project>
+      <Name>math</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\common\sys\sys.vcxproj">
+      <Project>{70D196E5-D68E-35C3-AC91-BFE31C3F8AB7}</Project>
+      <Name>sys</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,6 @@
+..\\..\\..\\..\\tutorials\\common\\texture/../math/../common.isph
+..\\..\\..\\..\\tutorials\\common\\texture/../math/math.isph
+..\\..\\..\\..\\tutorials\\common\\texture/../math/vec.isph
+..\\..\\..\\..\\tutorials\\common\\texture/texture.h
+..\\..\\..\\..\\tutorials\\common\\texture/texture2d.isph
+..\\..\\..\\..\\tutorials\\common\\texture\\texture2d.ispc

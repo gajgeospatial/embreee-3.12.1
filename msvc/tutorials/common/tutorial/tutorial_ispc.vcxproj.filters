@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\tutorials\common\tutorial\tutorial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tutorials\common\tutorial\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tutorials\common\tutorial\scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tutorials\common\tutorial\scene_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tutorials\common\tutorial\tasksys.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\d081d1a4a341c88fd9d3f76ad5208686\tutorial_device.dev.obj.rule" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include=".\tutorial_device.dev.obj" />
+    <Object Include=".\tutorial_device.dev_sse2.obj" />
+    <Object Include=".\tutorial_device.dev_sse4.obj" />
+    <Object Include=".\tutorial_device.dev_avx.obj" />
+    <Object Include=".\tutorial_device.dev_avx2.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A1977AD9-0D3E-3CDB-A636-03DE5117E442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{2C5FE1B0-C6D4-3AAB-B0E3-9D521E8735DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BF7EDE6E-DFB3-3F90-98C5-59331A9B4E87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

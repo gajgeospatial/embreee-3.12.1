@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/embreee-3.12.1/common/sys/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindThreads.cmake

@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0DD1FA5F-2FA1-388E-BB00-972AC3EDBE2B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>motion_blur_geometry_ispc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">motion_blur_geometry_ispc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">motion_blur_geometry_ispc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">motion_blur_geometry_ispc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">motion_blur_geometry_ispc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">motion_blur_geometry_ispc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">motion_blur_geometry_ispc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>image.lib;tutorial_ispc.lib;noise.lib;noise_ispc.lib;scenegraph.lib;embree3.lib;image.lib;lexers.lib;lights_ispc.lib;sys.lib;math.lib;imgui.lib;tasking.lib;tbb12_Debug.lib;opengl32.lib;glu32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(TBB_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\tutorials\common\glfw\x64\vc14;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /NXCompat /DynamicBase</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)motion_blur_geometry_ispc.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>image.lib;tutorial_ispc.lib;noise.lib;noise_ispc.lib;scenegraph.lib;embree3.lib;image.lib;lexers.lib;lights_ispc.lib;sys.lib;math.lib;imgui.lib;tasking.lib;tbb12_Debug.lib;opengl32.lib;glu32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(TBB_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\tutorials\common\glfw\x64\vc14;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /NXCompat /DynamicBase</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)motion_blur_geometry_ispc.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>image.lib;tutorial_ispc.lib;noise.lib;noise_ispc.lib;scenegraph.lib;embree3.lib;image.lib;lexers.lib;lights_ispc.lib;sys.lib;math.lib;imgui.lib;tasking.lib;tbb12_Debug.lib;opengl32.lib;glu32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(TBB_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\tutorials\common\glfw\x64\vc14;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /NXCompat /DynamicBase</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)motion_blur_geometry_ispc.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>image.lib;tutorial_ispc.lib;noise.lib;noise_ispc.lib;scenegraph.lib;embree3.lib;image.lib;lexers.lib;lights_ispc.lib;sys.lib;math.lib;imgui.lib;tasking.lib;tbb12.lib;opengl32.lib;glu32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(TBB_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\tutorials\common\glfw\x64\vc14;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /NXCompat /DynamicBase</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)motion_blur_geometry_ispc.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>image.lib;tutorial_ispc.lib;noise.lib;noise_ispc.lib;scenegraph.lib;embree3.lib;image.lib;lexers.lib;lights_ispc.lib;sys.lib;math.lib;imgui.lib;tasking.lib;tbb12.lib;opengl32.lib;glu32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(TBB_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\tutorials\common\glfw\x64\vc14;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /NXCompat /DynamicBase</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)motion_blur_geometry_ispc.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;USE_GLFW;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\tutorials\common\glfw\include;..\..\..\kernels\..\include;..\..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>image.lib;tutorial_ispc.lib;noise.lib;noise_ispc.lib;scenegraph.lib;embree3.lib;image.lib;lexers.lib;lights_ispc.lib;sys.lib;math.lib;imgui.lib;tasking.lib;tbb12.lib;opengl32.lib;glu32.lib;glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(TBB_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\tutorials\common\glfw\x64\vc14;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /NXCompat /DynamicBase</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)motion_blur_geometry_ispc.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\17921e83bec2dff50c498886983bf402\motion_blur_geometry_device.dev.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/motion_blur_geometry//motion_blur_geometry_device.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/motion_blur_geometry//motion_blur_geometry_device.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/motion_blur_geometry//motion_blur_geometry_device.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\motion_blur_geometry -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\motion_blur_geometry_device_ispc.h -MMM .\\motion_blur_geometry_device.dev.idep -o .\\motion_blur_geometry_device.dev.obj ..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\motion_blur_geometry -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\motion_blur_geometry_device_ispc.h -MMM .\\motion_blur_geometry_device.dev.idep -o .\\motion_blur_geometry_device.dev.obj ..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\motion_blur_geometry -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\motion_blur_geometry_device_ispc.h -MMM .\\motion_blur_geometry_device.dev.idep -o .\\motion_blur_geometry_device.dev.obj ..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\CMakeFiles\17921e83bec2dff50c498886983bf402\motion_blur_geometry_device.dev.obj.rule;..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\..\CMakeFiles\17921e83bec2dff50c498886983bf402\motion_blur_geometry_device.dev.obj.rule;..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\..\CMakeFiles\17921e83bec2dff50c498886983bf402\motion_blur_geometry_device.dev.obj.rule;..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\motion_blur_geometry_device.dev.obj;.\motion_blur_geometry_device.dev_sse2.obj;.\motion_blur_geometry_device.dev_sse4.obj;.\motion_blur_geometry_device.dev_avx.obj;.\motion_blur_geometry_device.dev_avx2.obj;.\motion_blur_geometry_device_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.\motion_blur_geometry_device.dev.obj;.\motion_blur_geometry_device.dev_sse2.obj;.\motion_blur_geometry_device.dev_sse4.obj;.\motion_blur_geometry_device.dev_avx.obj;.\motion_blur_geometry_device.dev_avx2.obj;.\motion_blur_geometry_device_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.\motion_blur_geometry_device.dev.obj;.\motion_blur_geometry_device.dev_sse2.obj;.\motion_blur_geometry_device.dev_sse4.obj;.\motion_blur_geometry_device.dev_avx.obj;.\motion_blur_geometry_device.dev_avx2.obj;.\motion_blur_geometry_device_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/motion_blur_geometry//motion_blur_geometry_device.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/motion_blur_geometry//motion_blur_geometry_device.dev.obj</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/motion_blur_geometry//motion_blur_geometry_device.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\motion_blur_geometry -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\motion_blur_geometry_device_ispc.h -MMM .\\motion_blur_geometry_device.dev.idep -o .\\motion_blur_geometry_device.dev.obj ..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\motion_blur_geometry -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\motion_blur_geometry_device_ispc.h -MMM .\\motion_blur_geometry_device.dev.idep -o .\\motion_blur_geometry_device.dev.obj ..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\motion_blur_geometry -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\motion_blur_geometry_device_ispc.h -MMM .\\motion_blur_geometry_device.dev.idep -o .\\motion_blur_geometry_device.dev.obj ..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\CMakeFiles\17921e83bec2dff50c498886983bf402\motion_blur_geometry_device.dev.obj.rule;..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\..\CMakeFiles\17921e83bec2dff50c498886983bf402\motion_blur_geometry_device.dev.obj.rule;..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\..\CMakeFiles\17921e83bec2dff50c498886983bf402\motion_blur_geometry_device.dev.obj.rule;..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\motion_blur_geometry_device.dev.obj;.\motion_blur_geometry_device.dev_sse2.obj;.\motion_blur_geometry_device.dev_sse4.obj;.\motion_blur_geometry_device.dev_avx.obj;.\motion_blur_geometry_device.dev_avx2.obj;.\motion_blur_geometry_device_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.\motion_blur_geometry_device.dev.obj;.\motion_blur_geometry_device.dev_sse2.obj;.\motion_blur_geometry_device.dev_sse4.obj;.\motion_blur_geometry_device.dev_avx.obj;.\motion_blur_geometry_device.dev_avx2.obj;.\motion_blur_geometry_device_ispc.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.\motion_blur_geometry_device.dev.obj;.\motion_blur_geometry_device.dev_sse2.obj;.\motion_blur_geometry_device.dev_sse4.obj;.\motion_blur_geometry_device.dev_avx.obj;.\motion_blur_geometry_device.dev_avx2.obj;.\motion_blur_geometry_device_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building ISPC object C:/Development/op3d_active/embreee-3.12.1/msvc/tutorials/motion_blur_geometry//motion_blur_geometry_device.dev.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -E make_directory .\
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\motion_blur_geometry -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\motion_blur_geometry_device_ispc.h -MMM .\\motion_blur_geometry_device.dev.idep -o .\\motion_blur_geometry_device.dev.obj ..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\..\CMakeFiles\17921e83bec2dff50c498886983bf402\motion_blur_geometry_device.dev.obj.rule;..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry_device.ispc;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.\motion_blur_geometry_device.dev.obj;.\motion_blur_geometry_device.dev_sse2.obj;.\motion_blur_geometry_device.dev_sse4.obj;.\motion_blur_geometry_device.dev_avx.obj;.\motion_blur_geometry_device.dev_avx2.obj;.\motion_blur_geometry_device_ispc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include=".\motion_blur_geometry_device.dev.obj" />
+    <Object Include=".\motion_blur_geometry_device.dev_sse2.obj" />
+    <Object Include=".\motion_blur_geometry_device.dev_sse4.obj" />
+    <Object Include=".\motion_blur_geometry_device.dev_avx.obj" />
+    <Object Include=".\motion_blur_geometry_device.dev_avx2.obj" />
+    <ResourceCompile Include="..\..\..\kernels\embree.rc" />
+    <ClCompile Include="..\..\..\tutorials\motion_blur_geometry\motion_blur_geometry.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\kernels\embree.vcxproj">
+      <Project>{8DE5EC7F-381E-3B31-A5B3-F7AA64A939A7}</Project>
+      <Name>embree</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\common\image\image.vcxproj">
+      <Project>{50A5ACF9-657F-3736-A416-9FE1A2170C14}</Project>
+      <Name>image</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\common\imgui\imgui.vcxproj">
+      <Project>{1D563FF1-E7CC-3B9E-AECC-C9C532E33552}</Project>
+      <Name>imgui</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\lexers\lexers.vcxproj">
+      <Project>{87B31D1B-8E49-3E29-82C1-5C8D07851907}</Project>
+      <Name>lexers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\common\lights\lights_ispc.vcxproj">
+      <Project>{066E19DE-7466-36FD-ADB4-B0488555AD7C}</Project>
+      <Name>lights_ispc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\math\math.vcxproj">
+      <Project>{C09592A3-9689-3A42-A84E-162CC2E8507B}</Project>
+      <Name>math</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\common\tutorial\noise.vcxproj">
+      <Project>{77176CF1-B3D1-3175-93BF-602EAF335FEA}</Project>
+      <Name>noise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\common\tutorial\noise_ispc.vcxproj">
+      <Project>{15CEBCE6-731C-37BC-B30D-7A6D93514EB5}</Project>
+      <Name>noise_ispc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\common\scenegraph\scenegraph.vcxproj">
+      <Project>{CB46F371-9DE5-3932-9002-68D17B01D5D8}</Project>
+      <Name>scenegraph</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\sys\sys.vcxproj">
+      <Project>{70D196E5-D68E-35C3-AC91-BFE31C3F8AB7}</Project>
+      <Name>sys</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\tasking\tasking.vcxproj">
+      <Project>{41AC3D00-00E8-34DB-9330-1D158033C680}</Project>
+      <Name>tasking</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\common\tutorial\tutorial_ispc.vcxproj">
+      <Project>{8EC711E6-2B22-318F-9268-FE400A0A040C}</Project>
+      <Name>tutorial_ispc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

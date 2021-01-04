@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\embreee-3.12.1\msvc\CMakeFiles\3b01bc7844d5021d3b8269c54d782138\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A1977AD9-0D3E-3CDB-A636-03DE5117E442}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25F38E8A-F495-30ED-A9E6-C5CC06488CFA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>embree_sse42</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">embree_sse42</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">embree_sse42</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">embree_sse42</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">embree_sse42</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">embree_sse42</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">embree_sse42</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;TASKING_TBB;EMBREE_TARGET_SSE2;EMBREE_TARGET_SSE42;EMBREE_TARGET_AVX;EMBREE_TARGET_AVX2;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\$(TBB_DIR)\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\instance_intersector.cpp.sse42.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\instance_intersector.cpp.sse42.cpp.rule;..\..\kernels\geometry\instance_intersector.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\instance_intersector.cpp.sse42.cpp.rule;..\..\kernels\geometry\instance_intersector.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\instance_intersector.cpp.sse42.cpp.rule;..\..\kernels\geometry\instance_intersector.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\geometry\instance_intersector.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\geometry\instance_intersector.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\geometry\instance_intersector.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\instance_intersector.cpp.sse42.cpp.rule;..\..\kernels\geometry\instance_intersector.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\instance_intersector.cpp.sse42.cpp.rule;..\..\kernels\geometry\instance_intersector.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\instance_intersector.cpp.sse42.cpp.rule;..\..\kernels\geometry\instance_intersector.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\geometry\instance_intersector.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\geometry\instance_intersector.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\geometry\instance_intersector.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\instance_intersector.cpp.sse42.cpp.rule;..\..\kernels\geometry\instance_intersector.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\geometry\instance_intersector.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual.cpp.sse42.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\geometry\curve_intersector_virtual.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\geometry\curve_intersector_virtual.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\geometry\curve_intersector_virtual.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\geometry\curve_intersector_virtual.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\geometry\curve_intersector_virtual.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\geometry\curve_intersector_virtual.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\geometry\curve_intersector_virtual.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual2.cpp.sse42.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual2.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual2.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual2.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual2.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual2.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual2.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\geometry\curve_intersector_virtual2.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\geometry\curve_intersector_virtual2.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\geometry\curve_intersector_virtual2.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual2.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual2.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual2.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual2.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual2.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual2.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\geometry\curve_intersector_virtual2.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\geometry\curve_intersector_virtual2.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\geometry\curve_intersector_virtual2.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\curve_intersector_virtual2.cpp.sse42.cpp.rule;..\..\kernels\geometry\curve_intersector_virtual2.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\geometry\curve_intersector_virtual2.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector1_bvh4.cpp.sse42.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector1_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector1_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector1_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector1_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector1_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector1_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector1_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector1_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector1_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector1_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector1_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector1_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector1_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector1_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_subdiv_mesh.cpp.sse42.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_subdiv_mesh.cpp.sse42.cpp.rule;..\..\kernels\common\scene_subdiv_mesh.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_subdiv_mesh.cpp.sse42.cpp.rule;..\..\kernels\common\scene_subdiv_mesh.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_subdiv_mesh.cpp.sse42.cpp.rule;..\..\kernels\common\scene_subdiv_mesh.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\common\scene_subdiv_mesh.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\common\scene_subdiv_mesh.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\common\scene_subdiv_mesh.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_subdiv_mesh.cpp.sse42.cpp.rule;..\..\kernels\common\scene_subdiv_mesh.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_subdiv_mesh.cpp.sse42.cpp.rule;..\..\kernels\common\scene_subdiv_mesh.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_subdiv_mesh.cpp.sse42.cpp.rule;..\..\kernels\common\scene_subdiv_mesh.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\common\scene_subdiv_mesh.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\common\scene_subdiv_mesh.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\common\scene_subdiv_mesh.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\CMakeFiles\113b6a6ac825d8c35828b0a9b9c028ab\scene_subdiv_mesh.cpp.sse42.cpp.rule;..\..\kernels\common\scene_subdiv_mesh.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\common\scene_subdiv_mesh.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\grid_soa.cpp.sse42.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\grid_soa.cpp.sse42.cpp.rule;..\..\kernels\geometry\grid_soa.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\grid_soa.cpp.sse42.cpp.rule;..\..\kernels\geometry\grid_soa.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\grid_soa.cpp.sse42.cpp.rule;..\..\kernels\geometry\grid_soa.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\geometry\grid_soa.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\geometry\grid_soa.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\geometry\grid_soa.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\grid_soa.cpp.sse42.cpp.rule;..\..\kernels\geometry\grid_soa.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\grid_soa.cpp.sse42.cpp.rule;..\..\kernels\geometry\grid_soa.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\grid_soa.cpp.sse42.cpp.rule;..\..\kernels\geometry\grid_soa.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\geometry\grid_soa.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\geometry\grid_soa.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\geometry\grid_soa.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\CMakeFiles\a46cb4d48adf7473b4a31d320db2bd9e\grid_soa.cpp.sse42.cpp.rule;..\..\kernels\geometry\grid_soa.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\geometry\grid_soa.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\63a855110684e705049a2f3d556e9e53\subdivpatch1base_eval.cpp.sse42.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\CMakeFiles\63a855110684e705049a2f3d556e9e53\subdivpatch1base_eval.cpp.sse42.cpp.rule;..\..\kernels\subdiv\subdivpatch1base_eval.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\CMakeFiles\63a855110684e705049a2f3d556e9e53\subdivpatch1base_eval.cpp.sse42.cpp.rule;..\..\kernels\subdiv\subdivpatch1base_eval.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\CMakeFiles\63a855110684e705049a2f3d556e9e53\subdivpatch1base_eval.cpp.sse42.cpp.rule;..\..\kernels\subdiv\subdivpatch1base_eval.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\CMakeFiles\63a855110684e705049a2f3d556e9e53\subdivpatch1base_eval.cpp.sse42.cpp.rule;..\..\kernels\subdiv\subdivpatch1base_eval.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\CMakeFiles\63a855110684e705049a2f3d556e9e53\subdivpatch1base_eval.cpp.sse42.cpp.rule;..\..\kernels\subdiv\subdivpatch1base_eval.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\CMakeFiles\63a855110684e705049a2f3d556e9e53\subdivpatch1base_eval.cpp.sse42.cpp.rule;..\..\kernels\subdiv\subdivpatch1base_eval.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\CMakeFiles\63a855110684e705049a2f3d556e9e53\subdivpatch1base_eval.cpp.sse42.cpp.rule;..\..\kernels\subdiv\subdivpatch1base_eval.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_bvh4.cpp.sse42.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_bvh4.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_filters.cpp.sse42.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_filters.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_filters.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_filters.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_filters.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_filters.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_filters.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_filters.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_filters.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_filters.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_filters.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_filters.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_filters.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\CMakeFiles\128e2fb68f8a3883a25cb2a4569464b5\bvh_intersector_stream_filters.cpp.sse42.cpp.rule;..\..\kernels\bvh\bvh_intersector_stream_filters.cpp;%(AdditionalInputs);</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\geometry\instance_intersector.cpp.sse42.cpp" />
+    <ClCompile Include="..\geometry\curve_intersector_virtual.cpp.sse42.cpp" />
+    <ClCompile Include="..\geometry\curve_intersector_virtual2.cpp.sse42.cpp" />
+    <ClCompile Include="..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp" />
+    <ClCompile Include="..\common\scene_subdiv_mesh.cpp.sse42.cpp" />
+    <ClCompile Include="..\geometry\grid_soa.cpp.sse42.cpp" />
+    <ClCompile Include="..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp" />
+    <ClCompile Include="..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp" />
+    <ClCompile Include="..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp" />
+    <ClCompile Include="..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\tasking\tasking.vcxproj">
+      <Project>{41AC3D00-00E8-34DB-9330-1D158033C680}</Project>
+      <Name>tasking</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

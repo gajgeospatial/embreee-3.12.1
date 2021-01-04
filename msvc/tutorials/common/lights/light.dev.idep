@@ -1,0 +1,6 @@
+..\\..\\..\\..\\tutorials\\common\\lights/../core/../math/../common.isph
+..\\..\\..\\..\\tutorials\\common\\lights/../core/../math/math.isph
+..\\..\\..\\..\\tutorials\\common\\lights/../core/../math/vec.isph
+..\\..\\..\\..\\tutorials\\common\\lights/../core/differential_geometry.isph
+..\\..\\..\\..\\tutorials\\common\\lights/light.isph
+..\\..\\..\\..\\tutorials\\common\\lights\\light.ispc

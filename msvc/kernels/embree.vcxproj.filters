@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\kernels\common\device.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\stat.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\acceln.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\accelset.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\state.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\rtcore.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\rtcore_builder.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\scene.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\alloc.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\geometry.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\scene_user_geometry.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\scene_instance.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\scene_triangle_mesh.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\scene_quad_mesh.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\scene_curves.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\scene_line_segments.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\scene_grid_mesh.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\scene_points.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\motion_derivative.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\subdiv\bezier_curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\subdiv\bspline_curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\subdiv\catmullrom_curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\geometry\primitive4.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\geometry\instance_intersector.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\geometry\curve_intersector_virtual.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\geometry\curve_intersector_virtual2.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\builders\primrefgen.cpp">
+      <Filter>Source Files\builders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_statistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh4_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh8_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_collider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_rotate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_refit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_builder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_builder_hair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_builder_hair_mb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_builder_morton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_builder_sah.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_builder_sah_spatial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_builder_sah_mb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_builder_twolevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_intersector1_bvh4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\common\scene_subdiv_mesh.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\subdiv\tessellation_cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\subdiv\subdivpatch1base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\subdiv\catmullclark_coefficients.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\geometry\grid_soa.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\subdiv\subdivpatch1base_eval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_builder_subdiv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\kernels\bvh\bvh_intersector_stream_filters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\common\algorithms\algorithms.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parallel_for.obj" />
+    <Object Include="..\common\algorithms\algorithms.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parallel_reduce.obj" />
+    <Object Include="..\common\algorithms\algorithms.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parallel_prefix_sum.obj" />
+    <Object Include="..\common\algorithms\algorithms.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parallel_for_for.obj" />
+    <Object Include="..\common\algorithms\algorithms.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parallel_for_for_prefix_sum.obj" />
+    <Object Include="..\common\algorithms\algorithms.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parallel_partition.obj" />
+    <Object Include="..\common\algorithms\algorithms.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parallel_sort.obj" />
+    <Object Include="..\common\algorithms\algorithms.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parallel_set.obj" />
+    <Object Include="..\common\algorithms\algorithms.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parallel_map.obj" />
+    <Object Include="..\common\algorithms\algorithms.dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\parallel_filter.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\kernels\embree.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{39BD77A5-C742-32DB-97CA-69CFDEE17763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BF7EDE6E-DFB3-3F90-98C5-59331A9B4E87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\builders">
+      <UniqueIdentifier>{4E0135FD-2E6B-3B1D-9D3F-9BF354ACDA21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{735BF6DA-A6A0-35D7-9AAD-35876E2748AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\geometry">
+      <UniqueIdentifier>{E29D2C6A-DD0E-351E-B843-8C37FBF1ACC7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
