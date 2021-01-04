@@ -404,7 +404,7 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 cmake -E make_directory .\
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
+$(INTEL_ISPC_COMPILER_PATH) -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -415,7 +415,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
 cmake -E make_directory .\
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
+$(INTEL_ISPC_COMPILER_PATH) -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -426,7 +426,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
 cmake -E make_directory .\
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
+$(INTEL_ISPC_COMPILER_PATH) -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -449,7 +449,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
 cmake -E make_directory .\
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
+$(INTEL_ISPC_COMPILER_PATH) -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -460,7 +460,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
 cmake -E make_directory .\
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
+$(INTEL_ISPC_COMPILER_PATH) -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -471,7 +471,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
 cmake -E make_directory .\
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
+$(INTEL_ISPC_COMPILER_PATH) -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -492,7 +492,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
 cmake -E make_directory .\
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\ISPC\ispc-v1.15.0-windows\bin\ispc.exe" -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
+$(INTEL_ISPC_COMPILER_PATH) -I ..\..\..\tutorials\voronoi -DTASKING_TBB --arch=x86-64 --addressing=32 -O3 --target=sse2,sse4,avx,avx2 --woff --opt=fast-math --dllexport -h .\voronoi_device_ispc.h -MMM .\\voronoi_device.dev.idep -o .\\voronoi_device.dev.obj ..\..\..\tutorials\voronoi\voronoi_device.ispc
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
