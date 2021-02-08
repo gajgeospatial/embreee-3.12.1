@@ -654,7 +654,7 @@ namespace embree
   typedef ISPCInstance* ISPCInstance_ptr;
   typedef ISPCGeometry* ISPCGeometry_ptr;
   
-  extern "C" RTCScene ConvertScene(RTCDevice g_device, ISPCScene* scene_in, RTCBuildQuality quality)
+  extern "C" RTCScene ConvertScene(RTCDevice g_device, ISPCScene* scene_in, RTCBuildQuality quality, bool log)
   {
     RTCScene scene_out = rtcNewScene(g_device);
     
@@ -699,8 +699,8 @@ namespace embree
           assert(false);
       }
     }
-
-    Application::instance->log(1,"creating Embree objects done");
+    if(log)
+      Application::instance->log(1,"creating Embree objects done");
     return scene_out;
   }
 }
