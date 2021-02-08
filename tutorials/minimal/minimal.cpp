@@ -84,7 +84,7 @@ RTCDevice initializeDevice()
 RTCScene initializeScene(RTCDevice device)
 {
   RTCScene scene = rtcNewScene(device);
-
+  
   /* 
    * Create a triangle mesh geometry, and initialize a single triangle.
    * You can look up geometry types in the API documentation to
