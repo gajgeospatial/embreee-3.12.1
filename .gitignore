@@ -13,3 +13,4 @@ vc142
 **/*.VC.db
 **/ipch*
 *.suo
+msvc/tutorials/viewer/viewer.vcxproj.user
