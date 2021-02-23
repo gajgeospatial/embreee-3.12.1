@@ -1029,6 +1029,7 @@ namespace embree
     /* draw pixels to screen */
     glDrawPixels(width,height,GL_RGBA,GL_UNSIGNED_BYTE,pixels);
 
+#if 0
     ImGui_ImplGlfwGL2_NewFrame();
     
     ImGuiWindowFlags window_flags = 0;
@@ -1056,7 +1057,8 @@ namespace embree
         
     ImGui::Render();
     ImGui_ImplGlfwGL2_RenderDrawData(ImGui::GetDrawData());
-    
+#endif
+
     glfwSwapBuffers(window);
 
 #ifdef __APPLE__
@@ -1118,7 +1120,7 @@ namespace embree
      glfwMakeContextCurrent(window);
      glfwSwapInterval(1);
      reshapeFunc(window,0,0);
-     
+#if 0     
      // Setup ImGui binding
      ImGui::CreateContext();
      ImGuiIO& io = ImGui::GetIO(); (void)io;
@@ -1128,7 +1130,7 @@ namespace embree
      // Setup style
      ImGui::StyleColorsDark();
      //ImGui::StyleColorsClassic();
-     
+#endif     
      // Load Fonts
      // - If no fonts are loaded, dear imgui will use the default font. You can also load multiple fonts and use ImGui::PushFont()/PopFont() to select them. 
      // - AddFontFromFileTTF() will return the ImFont* so you can store it if you need to select the font among multiple. 
