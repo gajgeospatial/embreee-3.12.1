@@ -8,3 +8,5 @@ vc142
 **/*.dir
 **/*.sdf
 **/*.VC.db
+**/*.obj
+**/*_ispc.h
