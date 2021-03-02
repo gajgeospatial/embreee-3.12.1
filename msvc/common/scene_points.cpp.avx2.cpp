@@ -1,1 +1,1 @@
-#include "../../kernels/common/scene_points.cpp"
+#include "..\..\kernels\common\scene_points.cpp"

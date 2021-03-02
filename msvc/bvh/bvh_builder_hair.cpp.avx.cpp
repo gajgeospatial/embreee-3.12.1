@@ -1,1 +1,1 @@
-#include "../../kernels/bvh/bvh_builder_hair.cpp"
+#include "..\..\kernels\bvh\bvh_builder_hair.cpp"

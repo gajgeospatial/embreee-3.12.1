@@ -330,7 +330,7 @@
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\instance_intersector.cpp -D dst=..\geometry\instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -339,7 +339,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\instance_intersector.cpp -D dst=..\geometry\instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -348,7 +348,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\instance_intersector.cpp -D dst=..\geometry\instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -369,7 +369,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\instance_intersector.cpp -D dst=..\geometry\instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -378,7 +378,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\instance_intersector.cpp -D dst=..\geometry\instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -387,7 +387,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\instance_intersector.cpp -D dst=..\geometry\instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -406,7 +406,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../geometry/instance_intersector.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/instance_intersector.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\instance_intersector.cpp -D dst=..\geometry\instance_intersector.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -425,7 +425,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual.cpp -D dst=..\geometry\curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -434,7 +434,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual.cpp -D dst=..\geometry\curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -443,7 +443,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual.cpp -D dst=..\geometry\curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -464,7 +464,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual.cpp -D dst=..\geometry\curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -473,7 +473,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual.cpp -D dst=..\geometry\curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -482,7 +482,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual.cpp -D dst=..\geometry\curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -501,7 +501,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../geometry/curve_intersector_virtual.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual.cpp -D dst=..\geometry\curve_intersector_virtual.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -520,7 +520,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual2.cpp -D dst=..\geometry\curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -529,7 +529,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual2.cpp -D dst=..\geometry\curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -538,7 +538,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual2.cpp -D dst=..\geometry\curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -559,7 +559,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual2.cpp -D dst=..\geometry\curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -568,7 +568,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual2.cpp -D dst=..\geometry\curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -577,7 +577,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual2.cpp -D dst=..\geometry\curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -596,7 +596,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../geometry/curve_intersector_virtual2.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/curve_intersector_virtual2.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\curve_intersector_virtual2.cpp -D dst=..\geometry\curve_intersector_virtual2.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -615,7 +615,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector1_bvh4.cpp -D dst=..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -624,7 +624,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector1_bvh4.cpp -D dst=..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -633,7 +633,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector1_bvh4.cpp -D dst=..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -654,7 +654,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector1_bvh4.cpp -D dst=..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -663,7 +663,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector1_bvh4.cpp -D dst=..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -672,7 +672,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector1_bvh4.cpp -D dst=..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -691,7 +691,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../bvh/bvh_intersector1_bvh4.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector1_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector1_bvh4.cpp -D dst=..\bvh\bvh_intersector1_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -710,7 +710,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\common\scene_subdiv_mesh.cpp -D dst=..\common\scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -719,7 +719,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\common\scene_subdiv_mesh.cpp -D dst=..\common\scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -728,7 +728,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\common\scene_subdiv_mesh.cpp -D dst=..\common\scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -749,7 +749,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\common\scene_subdiv_mesh.cpp -D dst=..\common\scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -758,7 +758,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\common\scene_subdiv_mesh.cpp -D dst=..\common\scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -767,7 +767,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\common\scene_subdiv_mesh.cpp -D dst=..\common\scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -786,7 +786,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../common/scene_subdiv_mesh.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/common/scene_subdiv_mesh.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/common/scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\common\scene_subdiv_mesh.cpp -D dst=..\common\scene_subdiv_mesh.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -805,7 +805,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\grid_soa.cpp -D dst=..\geometry\grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -814,7 +814,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\grid_soa.cpp -D dst=..\geometry\grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -823,7 +823,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\grid_soa.cpp -D dst=..\geometry\grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -844,7 +844,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\grid_soa.cpp -D dst=..\geometry\grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -853,7 +853,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\grid_soa.cpp -D dst=..\geometry\grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -862,7 +862,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\grid_soa.cpp -D dst=..\geometry\grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -881,7 +881,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../geometry/grid_soa.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/geometry/grid_soa.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/geometry/grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\geometry\grid_soa.cpp -D dst=..\geometry\grid_soa.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -900,7 +900,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\subdiv\subdivpatch1base_eval.cpp -D dst=..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -909,7 +909,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\subdiv\subdivpatch1base_eval.cpp -D dst=..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -918,7 +918,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\subdiv\subdivpatch1base_eval.cpp -D dst=..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -939,7 +939,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\subdiv\subdivpatch1base_eval.cpp -D dst=..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -948,7 +948,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\subdiv\subdivpatch1base_eval.cpp -D dst=..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -957,7 +957,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\subdiv\subdivpatch1base_eval.cpp -D dst=..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -976,7 +976,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../subdiv/subdivpatch1base_eval.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/subdiv/subdivpatch1base_eval.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/subdiv/subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\subdiv\subdivpatch1base_eval.cpp -D dst=..\subdiv\subdivpatch1base_eval.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -995,7 +995,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp -D dst=..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1004,7 +1004,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp -D dst=..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1013,7 +1013,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp -D dst=..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1034,7 +1034,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp -D dst=..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1043,7 +1043,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp -D dst=..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1052,7 +1052,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp -D dst=..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1071,7 +1071,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_hybrid4_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp -D dst=..\bvh\bvh_intersector_hybrid4_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1090,7 +1090,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp -D dst=..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1099,7 +1099,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp -D dst=..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1108,7 +1108,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp -D dst=..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1129,7 +1129,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp -D dst=..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1138,7 +1138,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp -D dst=..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1147,7 +1147,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp -D dst=..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1166,7 +1166,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_bvh4.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_bvh4.cpp -D dst=..\bvh\bvh_intersector_stream_bvh4.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1185,7 +1185,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_filters.cpp -D dst=..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1194,7 +1194,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_filters.cpp -D dst=..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1203,7 +1203,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_filters.cpp -D dst=..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1224,7 +1224,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_filters.cpp -D dst=..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1233,7 +1233,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_filters.cpp -D dst=..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1242,7 +1242,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_filters.cpp -D dst=..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -1261,7 +1261,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../bvh/bvh_intersector_stream_filters.cpp.sse42.cpp</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cmake -D src=C:/Development/op3d_active/embreee-3.12.1/kernels/bvh/bvh_intersector_stream_filters.cpp -D dst=C:/Development/op3d_active/embreee-3.12.1/msvc/bvh/bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
+cmake -D src=..\..\kernels\bvh\bvh_intersector_stream_filters.cpp -D dst=..\bvh\bvh_intersector_stream_filters.cpp.sse42.cpp -P ..\..\common\cmake\create_isa_dummy_file.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
